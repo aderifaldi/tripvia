@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/qr_black"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.playground.skypass.app.textview.TextViewAutoStyle
+            android:id="@+id/marchantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/body_size"
+            android:text="Toko Maju Terus"
+            custom:font="@string/bold"/>
+
+        <com.playground.skypass.app.textview.TextViewAutoStyle
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/small_size"
+            android:text="Rp. 100,000"
+            custom:font="@string/light"/>
+    </LinearLayout>
+
+</LinearLayout>

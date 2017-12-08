@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash3"
+        android:scaleType="centerCrop"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/login_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:padding="12dp"
+                android:background="@drawable/btn_login_fb_selector">
+
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textSize="@dimen/title_size"
+                    android:textColor="@color/colorWhite"
+                    android:layout_centerInParent="true"
+                    custom:font="@string/regular"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite">
+            <RelativeLayout
+                android:id="@+id/skip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:padding="12dp"
+                android:background="@color/colorGreyL">
+
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skip"
+                    android:textSize="@dimen/title_size"
+                    android:textColor="@color/colorBlueFcebook"
+                    android:layout_centerInParent="true"
+                    custom:font="@string/regular"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </TableRow>
+
+</RelativeLayout>

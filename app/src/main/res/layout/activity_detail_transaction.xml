@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="56dp"
+            android:layout_height="56dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+        </RelativeLayout>
+
+        <com.playground.skypass.app.textview.TextViewAutoStyle
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title_size"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Transaction Detail"
+            custom:font="@string/regular"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreyL"
+        android:padding="@dimen/activity_horizontal_margin">
+        <com.playground.skypass.app.textview.TextViewAutoStyle
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorDarkOrange"
+            android:textSize="@dimen/small_size"
+            android:text="Rp. 100,000"
+            custom:font="@string/light"/>
+
+        <LinearLayout
+            android:layout_toLeftOf="@id/total"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:id="@+id/marchantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/body_size"
+                android:text="Toko Maju Terus"
+                custom:font="@string/bold"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

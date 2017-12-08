@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/coins"
+                    android:scaleType="fitXY"/>
+
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/point"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkOrange"
+                    android:textSize="@dimen/title_size"
+                    custom:font="@string/medium"/>
+            </LinearLayout>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/title_size"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                custom:font="@string/medium"/>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/body_size"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                custom:font="@string/regular"/>
+
+            <RelativeLayout
+                android:id="@+id/redeem"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingRight="24dp"
+                android:paddingLeft="24dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@drawable/btn_dialog_monster_selector">
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:textSize="@dimen/body_size"
+                    android:text="Redeem"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    custom:font="@string/regular"/>
+            </RelativeLayout>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/close"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cari lebih banyak"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

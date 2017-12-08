@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.playground.skypass.app.textview.TextViewAutoStyle
+        android:textSize="24sp"
+        android:text="Reward"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:font="@string/medium"/>
+
+</LinearLayout>

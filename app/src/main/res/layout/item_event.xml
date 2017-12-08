@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <ImageView
+            android:id="@+id/img"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_point">
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:textSize="18sp"
+                    android:text="Points"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    custom:font="@string/regular"/>
+            </RelativeLayout>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp"
+                custom:font="@string/bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="92dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                custom:font="@string/bold"/>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:maxLines="2"
+                android:textSize="18sp"
+                custom:font="@string/regular"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

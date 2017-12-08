@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ic_menu_size">24dp</dimen>
+    <dimen name="ic_botom_menu_size">24dp</dimen>
+    <dimen name="font_botom_menu_size">14sp</dimen>
+    <dimen name="padding_botom_menu">12dp</dimen>
+    <dimen name="toolbarSize">56dp</dimen>
+    <dimen name="paddingNormal">16dp</dimen>
+    <dimen name="paddingBig">24dp</dimen>
+    <dimen name="bottomMenuSize">56dp</dimen>
+    <dimen name="bottomMenuIconSize">22dp</dimen>
+    <dimen name="paddingExtraSmall">4dp</dimen>
+    <dimen name="paddingSmall">6dp</dimen>
+    <dimen name="paddingMedium">8dp</dimen>
+    <dimen name="fontBig">19sp</dimen>
+    <dimen name="fontNormal">17sp</dimen>
+    <dimen name="fontMedium">15sp</dimen>
+    <dimen name="fontSmall">13sp</dimen>
+    <dimen name="imgProfileSize">24dp</dimen>
+    <dimen name="title_size">19sp</dimen>
+    <dimen name="body_size">17sp</dimen>
+    <dimen name="small_size">15sp</dimen>
+    <dimen name="extra_small_size">13sp</dimen>
+    <dimen name="big_size">20sp</dimen>
+</resources>

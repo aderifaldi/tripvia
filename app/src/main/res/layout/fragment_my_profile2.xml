@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="3dp"
+                android:background="@drawable/bullet_fill_accent">
+                <com.playground.skypass.app.imageview.CircleImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:id="@+id/txt_name"
+                    android:textSize="@dimen/title_size"
+                    android:text="Ade Rifaldi"
+                    android:textColor="@color/colorDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    custom:font="@string/medium"/>
+
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:id="@+id/txt_email"
+                    android:textSize="@dimen/small_size"
+                    android:text="Ade Rifaldi"
+                    android:visibility="gone"
+                    android:textColor="@color/colorDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    custom:font="@string/regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.playground.skypass.app.textview.TextViewAutoStyle
+                        android:id="@+id/txt_point"
+                        android:textSize="@dimen/small_size"
+                        android:text="100 Points, 30 Xp"
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        custom:font="@string/regular"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/power"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
+        style="@style/MyCustomTabLayout"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

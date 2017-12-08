@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "755476490703",
+    "firebase_url": "https://skypass-c284c.firebaseio.com",
+    "project_id": "skypass-c284c",
+    "storage_bucket": "skypass-c284c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755476490703:android:26846dd871a9d606",
+        "android_client_info": {
+          "package_name": "com.playground.skypass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755476490703-9oqo3b83fg0d4uibgut4dv3as0i6ldev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlc4Gf7B1aitxRdj_zun8s446m5VD9Zbc"
+        },
+        {
+          "current_key": "AIzaSyBqy93XbrjxqHR0F0_H4EHaiXc6uPFj3II"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

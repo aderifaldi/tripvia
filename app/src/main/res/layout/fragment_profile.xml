@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_alignParentRight="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/power"/>
+
+        <LinearLayout
+            android:layout_marginTop="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <com.playground.skypass.app.imageview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:id="@+id/txt_name"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:font="@string/medium"/>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:id="@+id/txt_email"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/colorGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:font="@string/regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:textSize="18sp"
+                android:text="Pts"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:font="@string/medium"/>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:textSize="24sp"
+                android:text="100"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:font="@string/medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_marginTop="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:textSize="18sp"
+                android:text="Xp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:font="@string/medium"/>
+
+            <com.playground.skypass.app.textview.TextViewAutoStyle
+                android:gravity="right"
+                android:textSize="24sp"
+                android:text="1200"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:font="@string/medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorWhite"
+                style="@style/MyCustomTabLayout"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed" />
+
+            <TableRow
+                android:layout_alignParentBottom="true"
+                android:layout_height="56dp"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true">
+                <RelativeLayout
+                    android:id="@+id/menu_event"
+                    android:paddingTop="@dimen/padding_botom_menu"
+                    android:paddingBottom="@dimen/padding_botom_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_weight="1">
+                    <com.playground.skypass.app.textview.TextViewAutoStyle
+                        android:textSize="16sp"
+                        android:text="Collections"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        custom:font="@string/regular"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/menu_promo"
+                    android:paddingTop="@dimen/padding_botom_menu"
+                    android:paddingBottom="@dimen/padding_botom_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_weight="1">
+                    <com.playground.skypass.app.textview.TextViewAutoStyle
+                        android:textSize="16sp"
+                        android:text="Activities"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        custom:font="@string/regular"/>
+                </RelativeLayout>
+            </TableRow>
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

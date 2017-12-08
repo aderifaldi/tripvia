@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.playground.skypass.activity.EventDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/check_in"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorDarkOrange">
+        <com.playground.skypass.app.textview.TextViewAutoStyle
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:text="Check In Now"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:font="@string/regular"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_above="@id/check_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="280dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/level"
+                    android:layout_marginTop="2dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_point">
+                    <com.playground.skypass.app.textview.TextViewAutoStyle
+                        android:id="@+id/point"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        custom:font="@string/regular"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_level">
+                    <com.playground.skypass.app.textview.TextViewAutoStyle
+                        android:id="@+id/xp"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        custom:font="@string/regular"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="26sp"
+                    custom:font="@string/bold"/>
+
+                <com.playground.skypass.app.textview.TextViewAutoStyle
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDark"
+                    android:textSize="20sp"
+                    custom:font="@string/medium"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorBlackTransparent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/back"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

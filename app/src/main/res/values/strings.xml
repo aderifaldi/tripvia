@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tripvia</string>
+
+    <string name="facebook_app_id">131612367462457</string>
+
+    <!-- Animation Duration -->
+    <string name="anim_duration_slide">200</string>
+    <string name="anim_duration_pull">400</string>
+
+    <!-- Font Style -->
+    <string name="bold">bold</string>
+    <string name="regular">regular</string>
+    <string name="light">light</string>
+    <string name="medium">medium</string>
+
+    <string name="about_app">City Point is loyalty &amp; engagement platform  that make is easy for tourist attraction owner to create augmented reality scavanger hunt.</string>
+</resources>
